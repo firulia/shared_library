@@ -1,10 +1,11 @@
 {
   "name": "shared_library",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This a sample shared library for \"Durchstich\" project.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "author": "jufi",
   "license": "ISC",

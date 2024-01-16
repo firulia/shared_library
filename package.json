@@ -1,0 +1,17 @@
+{
+  "name": "shared_library",
+  "version": "0.0.1-snapshot",
+  "description": "This a sample shared library for \"Durchstich\" project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jufi",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "react": "^18.2.0"
+  }
+}

@@ -1,3 +1,5 @@
 package-lock.json
 node_modules/
-*.js
+dist/
+*.js*
+*.d.ts

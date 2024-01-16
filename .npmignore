@@ -1,0 +1,6 @@
+node_modules/
+*.test.ts
+*.spec.ts
+# Add other patterns/files you want to exclude from the npm package.
+
+# Do not exclude the 'dist' directory if it contains your build output.

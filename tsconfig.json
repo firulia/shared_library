@@ -1,18 +1,38 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "react"
+    /* Basic Options */
+    "target": "es6",                                 // Specify ECMAScript target version
+    "module": "commonjs",                            // Specify module code generation
+    "declaration": true,                             // Important for .d.ts files
+    "lib": ["dom", "dom.iterable", "esnext"],        // Specify library files to be included in the compilation
+    "outDir": "./dist",                              // Redirect output structure to the directory
+    "rootDir": "./",                              // Specify the root directory of input files
+    "strict": true,                                  // Enable all strict type-checking options
+    "esModuleInterop": true,                         // Enables emit interoperability between CommonJS and ES Modules
+    "skipLibCheck": true,                            // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true,        // Disallow inconsistently-cased references to the same file
+
+    /* JSX Options */
+    "jsx": "react",                                  // Specify JSX code generation: 'preserve', 'react', 'react-native'
+
+    /* Additional Checks */
+    "noImplicitAny": true,                           // Raise error on expressions and declarations with an implied 'any' type
+    "strictNullChecks": true,                        // Enable strict null checks
+
+    /* Source Map Options */
+    "sourceMap": true,                               // Generates corresponding '.map' file
+
+    /* Advanced Options */
+    "resolveJsonModule": true,                       // Include modules imported with '.json' extension
+    "allowSyntheticDefaultImports": true             // Allow default imports from modules with no default export
   },
-  "include": ["src"]
+  "include": [
+    "src/**/*",  // Includes all files in the src folder
+    "index.ts"   // Explicitly include index.ts if it's outside of src
+  ],
+  "exclude": [
+    "node_modules",                                 // Exclude the node_modules directory
+    "**/*.test.ts",                                 // Exclude test files
+    "dist"
+  ]
 }
